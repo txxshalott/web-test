@@ -1,0 +1,79 @@
+ * {
+     margin:0;
+     padding:0;
+ }
+
+ .img-gojo {
+    display:none;
+ }
+
+ .wrapper { /*contains strawberry and img info*/
+     width:100%; /*full width*/
+ }
+
+ .img-info { /*text*/
+     width: 100%;
+ }
+
+ .img-info h2 {
+     /* top, left/right, bottom */
+     padding: 30px 30px 20px;
+     font-family: Helvetica;
+     font-size: 50px;
+     line-height: 44px;
+ }
+
+ .img-info p { 
+    /* top, left/right, bottom */
+    padding: 0px 30px 20px;
+    font-family: Helvetica;
+    font-size: 16px;
+    color: green;
+    line-height: 24px;
+}
+
+.img-strawb{
+    width: 100%;
+}
+
+/* run below if width is at least 768px
+
+ONLY INCLUDE CODE TO BE CHANGED */
+@media only screen and (min-width: 768px) {
+    .img-gojo {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+     }
+
+     .wrapper {
+        border: medium solid #808080;
+        flex-flow: row wrap;
+        width: 80%; /* size of container */
+        margin: auto; /*center*/
+        /* justify-content: center; */
+        overflow: hidden;
+    }
+
+    .img-info {
+        width: 40%;
+        display: inline-block
+    }
+
+   .img-strawb {
+       display: inline-block;
+       padding: 30px, 30px, 30px;
+       width: 50%;
+       float: left;
+   }
+
+
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
